@@ -1,0 +1,54 @@
+{
+  "id": "1",
+  "userName": "@shr@f",
+  "fullName": {
+    "first": "ashraf",
+    "last": "alshashaa"
+  },
+  "email": "ashraf@gmail.com",
+  "password": "********",
+  "address": {
+    "street": "Van Swietenstraat 13",
+    "city": "Den Haag"
+  },
+  "isChef": false,
+  "photo": "http:/profile_img.jpg",
+  "phone": 612345678,
+  "customerReviews": ["(this user is not a chef so this field is empty)"],
+  "customerRates": ["(this user is not a chef so this field is empty)"],
+  "orderToPrepare": ["(this user is not a chef so this field is empty)"],
+  "orderHistory": [
+    {
+      "chefId": "63605465e496b5509d61751f",
+      "deliveryAddress": "Ingogostraat 14",
+      "createdAt": "2022-01-01",
+      "items": [
+        {
+          "title": "Pizza Margarita",
+          "price": 12.43,
+          "quantity": 5,
+          "image": "http://pizza.png",
+          "chefName": "Frank"
+        },
+        {
+          "title": "Cheese cake",
+          "price": 21.32,
+          "quantity": 2,
+          "image": "http://pizza.png",
+          "chefName": "Frank"
+        }
+      ]
+    }
+  ],
+  "cart": [
+    {
+      "mealId": "635f0495ebc246a82994a058",
+      "quantity": 32
+    },
+    {
+      "mealId": "635f9e948a90e98b9e26ff80",
+      "quantity": 15
+    }
+  ],
+  "favoriteChefs": ["63605465e496b5509d61751f"]
+}

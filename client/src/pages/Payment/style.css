@@ -1,0 +1,94 @@
+.complete-payment-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 2px solid gray;
+  border-radius: 30px;
+  width: 500px;
+  height: 400px;
+  padding: 20px;
+  position: relative;
+}
+.complete-payment-container h4 {
+  position: absolute;
+  top: -15px;
+  background-color: #e9e3e3;
+  padding: 0 10px;
+}
+.payment-type-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.payment-type-container label {
+  margin: 10px;
+  font-size: larger;
+
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+
+  padding: 5px;
+  text-align: center;
+  width: 100px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: calc(0.3s);
+}
+
+.stripe-checkout-btn {
+  border: none;
+}
+
+.payment-type-container label input {
+  margin-right: 10px;
+  display: none;
+}
+.focus {
+  background-color: var(--secondary-color);
+  transform: scale(1.1);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.payment-link,
+.link-my-orders-payment-page {
+  text-align: center;
+  width: 150px;
+  padding: 10px;
+  font-size: small;
+  text-decoration: none;
+  color: var(--primary-color);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  color: white;
+  transition: calc(0.7s);
+  border: none;
+}
+.payment-link:hover,
+.link-my-orders-payment-page:hover {
+  transform: scale(0.97);
+  color: white;
+}
+.payment-methods-icons {
+  height: 30px;
+  margin-right: 10px;
+}
+.ideal-icons,
+.cash-icon {
+  height: 25px;
+  margin-right: 0px;
+}
+
+@media screen and (max-width: 1024px) {
+  .complete-payment-container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .complete-payment-container {
+    width: 80%;
+  }
+  .complete-payment-container h5 {
+    font-size: medium;
+  }
+}

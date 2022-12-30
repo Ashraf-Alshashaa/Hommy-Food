@@ -1,0 +1,55 @@
+.hero-section {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.banner-background-img {
+  z-index: -1;
+  width: 100%;
+}
+
+.slogan-container {
+  max-width: 250px;
+  position: absolute;
+  top: 150px;
+  left: 10%;
+}
+
+.slogan {
+  width: 100%;
+  animation: slogan-load 500ms ease-in;
+}
+
+@keyframes slogan-load {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 820px) {
+  .banner-background-img {
+    width: auto;
+    height: 120%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .hero-section {
+    background-color: rgba(165, 42, 42, 0.131);
+  }
+  .banner-background-img {
+    width: auto;
+    height: 120%;
+  }
+}

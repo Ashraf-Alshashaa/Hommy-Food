@@ -1,0 +1,70 @@
+.result-page-container {
+  width: 100%;
+  min-height: 90vh;
+  animation: result-load 500ms ease-in;
+}
+.result-page {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.result-page .result-meals-card-container {
+  display: flex !important;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.meals-not-found img {
+  margin-left: 26%;
+}
+.meals-not-found h1 {
+  font-size: 1.5vw;
+  padding: 0%;
+}
+.meals-not-found h5 {
+  color: var(--darker-gray-color);
+}
+.loading-gif {
+  margin-left: 40%;
+  margin-top: 10%;
+}
+.went-wrong-msg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  margin-top: 8%;
+  margin-left: 35%;
+}
+
+.went-wrong-msg h1 {
+  font-size: 1.5vw;
+  color: red;
+}
+
+.went-wrong-msg h5 {
+  color: var(--darker-gray-color);
+  font-size: 1.3vw;
+  text-align: center;
+}
+
+@keyframes result-load {
+  0% {
+    transform: translateY(-10%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .result-page {
+    width: 70%;
+    margin: 15%;
+  }
+}

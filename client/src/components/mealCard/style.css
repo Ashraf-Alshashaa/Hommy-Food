@@ -1,0 +1,145 @@
+.result-meal-card {
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  cursor: default;
+  align-items: center;
+}
+
+.result-meal-card .result {
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10%;
+}
+
+.result-meal-card .result h3 {
+  margin: 0;
+  font-size: large;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.order-type-container {
+  position: relative;
+}
+
+.order-type-container .title .price {
+  color: #e9e3e3;
+  z-index: 10;
+  padding-left: 10px;
+}
+
+.order-type-container .title {
+  display: flex;
+  font-weight: 600;
+  color: #e9e3e3;
+  font-size: 16px;
+}
+.order-type-container .title .price {
+  margin: 0;
+  align-self: flex-end;
+}
+
+.order-type-container .title img {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 3px;
+  left: 2%;
+  width: 27%;
+  height: auto;
+}
+
+.result-meal-card-image {
+  display: flex;
+  width: 100%;
+  height: 60%;
+  justify-content: center;
+}
+
+.result-meal-card-image .image-Container {
+  display: flex;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  width: 90%;
+  height: 175px;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.result-meal-card-image .image-Container img {
+  height: auto;
+}
+
+.result-meal-card .chef-container {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  padding: 0 10px 0 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-meal-card .chef-container .chef {
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.result-meal-card .chef a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--primary-color);
+}
+
+.result-meal-card .chef img {
+  margin-right: 10px;
+}
+
+.result-meal-card .chef .fa-user {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #e9e3e3;
+  background-color: var(--primary-color);
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.result-meal-card h4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--secondary-color);
+}
+
+.chef-container .chip {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.chip img {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.result-meal-card .order-type-container {
+  display: flex;
+  width: 90%;
+  margin-top: 10px;
+  justify-content: space-between;
+  height: 20%;
+  align-items: center;
+}
+
+.result-meal-card .result .delivery {
+  color: var(--secondary-color);
+  font-weight: 600;
+  font-size: 14px;
+}

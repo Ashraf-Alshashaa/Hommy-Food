@@ -1,0 +1,214 @@
+.meal-detail-page-container {
+  display: flex;
+  justify-content: center;
+}
+
+.meal-Detail-page {
+  width: 50rem;
+  height: fit-content;
+  margin: 3%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid lightgray;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.meal-page-title {
+  height: 12%;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  margin-bottom: 30px;
+}
+
+.meal-page-title h5 {
+  font-size: 2rem;
+  color: var(--primary-color);
+}
+
+.meal-detail-page-children {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  justify-content: space-around;
+  padding: 0 20px 20px 20px;
+}
+
+.right-side-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 100%;
+}
+
+.meal-page-image {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: 1px solid darkgray;
+}
+
+.meal-page-image img {
+  width: 100%;
+}
+
+.meal-Detail-page .meal-details-page-chef-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 50% !important;
+  border: 1px solid var(--primary-color);
+}
+
+.chef-details-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.left-side-container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  min-height: 100%;
+  justify-content: space-around;
+}
+
+.left-side-container .delivery-type {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--secondary-color);
+}
+
+.meal-detail-page-chip-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--primary-color);
+  margin-right: 10px;
+  overflow: hidden;
+}
+
+.meal-detail-page-chip-image img {
+  height: 100%;
+}
+
+.left-side-container .chef-name {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.meal-page-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  height: 10%;
+  margin-top: 15px;
+}
+
+.meal-page-info .details {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  color: black;
+}
+
+.meal-page-info p {
+  font-size: 14px;
+  padding-top: 5px;
+  color: var(--darker-gray-color);
+}
+
+.meal-page-Ingredients {
+  height: 15%;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+.meal-page-Ingredients p {
+  word-spacing: 5px;
+}
+
+.meal-page-description {
+  margin: 5px;
+  overflow-y: scroll;
+}
+
+.meal-page-price {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--primary-color);
+  align-items: center;
+}
+
+.meal-page-price p {
+  margin-bottom: 0px;
+}
+
+.meal-page-price i:hover {
+  color: var(--primary-color);
+}
+
+.fa-cart-shopping:hover {
+  color: var(--primary-color);
+}
+
+@media only screen and (max-width: 600px) {
+  .meal-Detail-page {
+    width: 90%;
+    margin: 40px 0;
+  }
+  .meal-detail-page-children {
+    flex-direction: column;
+    align-items: center;
+  }
+  .left-side-container {
+    order: 1;
+    width: 100%;
+  }
+  .right-side-container {
+    width: 100%;
+  }
+  .divide {
+    width: 100%;
+  }
+  .meal-Detail-page img {
+    border-radius: 5px !important;
+  }
+  .divide2 {
+    width: 100%;
+  }
+  .meal-page-Ingredients {
+    height: 10%;
+  }
+  .meal-page-description {
+    font-size: 3vw;
+    height: 40%;
+  }
+  .meal-page-price {
+    height: 5%;
+  }
+  .meal-page-title h5 {
+    font-size: 4vw;
+  }
+  .meal-page-Ingredients {
+    font-size: 3vw;
+  }
+  .meal-page-info {
+    font-size: 3vw;
+  }
+  .meal-page-price {
+    margin-top: 13%;
+    font-size: 3vw;
+  }
+}

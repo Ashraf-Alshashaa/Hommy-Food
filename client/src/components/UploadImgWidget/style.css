@@ -1,0 +1,8 @@
+.upload-img {
+  font-weight: 700;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 16px;
+  color: var(--secondary-color);
+  cursor: pointer;
+}

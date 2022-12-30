@@ -1,0 +1,50 @@
+.shopping-cart-btn-disable .faa-xl {
+  color: var(--dark-gray-color);
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.shopping-cart-btn-enable .faa-xl {
+  color: var(--secondary-color);
+  font-size: 20px;
+  padding-right: 5px;
+}
+
+.shopping-cart-btn-enable,
+.shopping-cart-btn-disable {
+  border: none;
+  background: none;
+}
+
+.shopping-cart-btn-enable .faa-xl:hover {
+  color: var(--primary-color);
+  transform: scale(0.94);
+}
+
+.shopping-cart-btn-disable .faa-xl:hover {
+  color: var(--dark-gray-color);
+  transform: scale(0.94);
+}
+
+.shopping-cart-container a {
+  text-decoration: none;
+}
+
+.shopping-cart-container i:hover {
+  color: var(--secondary-color);
+}
+
+.shopping-cart-container i {
+  display: flex;
+  flex-direction: row;
+  color: var(--primary-color);
+  align-items: center;
+}
+
+.shopping-cart-container p {
+  font-family: "Montserrat", "sans-serif";
+  font-size: 16px;
+  font-weight: 600;
+  padding-left: 5px;
+  margin: 0;
+}

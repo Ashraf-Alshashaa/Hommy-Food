@@ -1,0 +1,118 @@
+.order-details-card-container {
+  display: flex;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.order-details-img-container {
+  margin-right: 20px;
+}
+.order-details-img {
+  object-fit: cover;
+  width: 160px;
+  height: 120px;
+}
+
+.order-details-info {
+  display: flex;
+  width: 100%;
+}
+
+.order-details-basic-info {
+  flex: 2;
+  font-size: 14px;
+}
+.order-details-basic-info span {
+  font-size: 16px;
+}
+.order-details-price-info {
+  flex: 1;
+  font-size: 14px;
+}
+.order-details-price-info span {
+  font-size: 16px;
+}
+/*Responsive styling*/
+
+@media screen and (max-width: 1024px) {
+  .order-details-img {
+    width: 120px;
+    height: 80px;
+  }
+  .order-details-basic-info {
+    font-size: 10px;
+  }
+  .order-details-basic-info span {
+    font-size: 12px;
+  }
+  .order-details-price-info {
+    font-size: 10px;
+  }
+  .order-details-price-info span {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .order-details-img {
+    width: 100px;
+    height: 60px;
+  }
+  .order-details-basic-info {
+    font-size: 6px;
+  }
+  .order-details-basic-info span {
+    font-size: 8px;
+  }
+  .order-details-price-info {
+    font-size: 6px;
+  }
+  .order-details-price-info span {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .order-details-card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .order-details-img-container {
+    margin: 0%;
+    width: 80%;
+    height: 60px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  .order-details-img {
+    width: 100%;
+  }
+  .order-details-basic-info {
+    display: flex;
+    flex-direction: row !important;
+
+    font-size: 5px;
+  }
+
+  .order-details-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .order-details-basic-info span {
+    font-size: 6px;
+  }
+  .order-details-price-info {
+    display: flex;
+    font-size: 5px;
+    min-width: 100%;
+    justify-content: space-evenly;
+  }
+  .order-details-price-info span {
+    font-size: 6px;
+    margin-left: auto;
+  }
+}

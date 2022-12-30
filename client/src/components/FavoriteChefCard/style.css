@@ -1,0 +1,117 @@
+.favorite-chef-card-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  height: 250px;
+  border: 2px solid lightgray;
+  padding: 5% 0;
+  border-radius: 20px;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px auto;
+  cursor: pointer;
+}
+.favorite-chef-card-container:hover {
+  transform: scale(1.02);
+  transition: all 0.4s ease-in-out;
+}
+.favorite-chef-card-container .fa-heart-crack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--secondary-color);
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 30px;
+}
+
+.favorite-chef-profile-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  border: 4px solid var(--primary-color);
+  border-radius: 50%;
+}
+
+.favorite-chef-profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.favorite-chef-image-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}
+.rated-star-comp {
+  padding-top: 10px;
+}
+
+.favorite-chef-info-container h3 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.favorite-chef-info-container h3 span {
+  color: var(--primary-color);
+}
+.favorite-chef-delivery-type {
+  color: var(--secondary-color) !important;
+}
+
+/* .fa-heart-crack:before {
+  content: attr(data-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: 140px;
+  background-color: black;
+  color: black;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 0;
+  transition: opacity 1s ease-in-out;
+
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+
+.fa-heart-crack:hover:before {
+  opacity: 1;
+  visibility: visible;
+} */
+
+@media only screen and (max-width: 820px) {
+  .favorite-chef-card-container {
+    width: 90%;
+  }
+  .favorite-chef-profile-image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .favorite-chef-card-container {
+    flex-direction: column;
+    width: 80%;
+    height: fit-content;
+  }
+  .favorite-chef-info-container h3 {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .favorite-chef-info-container {
+    border-top: 2px solid lightgray;
+    padding-top: 10px;
+    margin-top: 10px;
+  }
+}

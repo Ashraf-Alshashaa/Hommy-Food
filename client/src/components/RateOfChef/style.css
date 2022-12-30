@@ -1,0 +1,20 @@
+.rated-star-container {
+  margin-bottom: 0;
+}
+
+.rated-star {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-star {
+  padding: 5px;
+  font-size: 18px;
+  color: gold;
+}
+
+.chef-profile-error-msg {
+  color: red;
+}

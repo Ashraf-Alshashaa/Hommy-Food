@@ -1,0 +1,239 @@
+.checkout-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary-color);
+  width: 1024px;
+  margin: 0 auto;
+  padding: 10px;
+}
+.checkout-page > h1 {
+  color: var(--secondary-color);
+}
+.checkout-pickup-option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  text-align: center;
+}
+.checkout-pickup-option > h3 {
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 5px;
+}
+.checkout-delivery-option {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+.customer-info-card {
+  display: inline-block;
+  width: 300px;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.delivery-img {
+  height: 230px;
+  max-width: 100%;
+  overflow: hidden;
+  border-radius: 0px 0px 20px 20px;
+  display: inline-block;
+  margin: 0px 40px;
+}
+.delivery-img img {
+  transform: skew(0deg, -13deg);
+  height: 250px;
+  margin: -35px 0px 0px -50px;
+}
+.inner-skew {
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 0px;
+  transform: skew(0deg, 13deg);
+  font-size: 0px;
+  margin: 30px 0px 0px 0px;
+  background: #c8c2c2;
+  height: 250px;
+  width: 200px;
+}
+.customer-existing-info-container {
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  padding: 120px 20px 20px 20px;
+  border-radius: 20px;
+  background: #fff;
+  margin: -120px 0px 0px 0px;
+  line-height: 19px;
+  font-size: 14px;
+  width: 300px;
+}
+.customer-existing-info-container h3 {
+  color: var(--secondary-color);
+}
+.customer-existing-info-container p {
+  text-align: start;
+}
+
+.contact-info-container {
+  text-align: start;
+}
+.contact-info-container label {
+  color: var(--secondary-color);
+}
+.new-address-form {
+  padding: 30px;
+  width: 50%;
+  background-color: var(--light-gray-color);
+  border-radius: 10px;
+}
+
+.address-input {
+  width: 100%;
+}
+.new-address-check-box-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.new-address-check-box-container p {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+  margin-left: 10px;
+}
+.toggle[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+
+.toggle-label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 3rem;
+  height: 1.5rem;
+  background: white;
+  display: block;
+  border-radius: 50px;
+  position: relative;
+}
+
+.toggle-label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 1rem;
+  height: 1rem;
+  background: var(--primary-color);
+  border-radius: 90px;
+  transition: 0.3s;
+}
+
+.toggle:checked + .toggle-label {
+  background: var(--secondary-color);
+}
+
+.toggle:checked + .toggle-label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+.toggle-label:active:after {
+  width: 70%;
+}
+.new-address-form label {
+  color: var(--primary-color);
+  padding: 5px 0px 3px 0px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.address-input input {
+  width: 100%;
+  height: 45px;
+  color: var(--secondary-color);
+  border-bottom: 3px solid var(--primary-color);
+}
+.address-input input::placeholder {
+  color: var(--secondary-color);
+}
+.pickup-image {
+  width: 30%;
+}
+.pickup-image img {
+  width: 100%;
+}
+.continue-btn {
+  width: 20%;
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.continue-btn {
+  background-color: var(--secondary-color);
+  border: 2px solid var(--secondary-color);
+  font-weight: 700;
+  font-size: 16px;
+  color: #f2f2f2;
+}
+.continue-btn:hover {
+  transform: scale(0.95);
+}
+.payment-arrow-icon {
+  font-size: 20px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .checkout-page {
+    width: 100%;
+  }
+  .checkout-delivery-option {
+    justify-content: space-between;
+    width: 90%;
+  }
+  .new-address-form {
+    width: 55%;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .checkout-delivery-option {
+    flex-direction: column;
+    width: 90%;
+  }
+  .delivery-img {
+    width: 200px;
+  }
+  .customer-existing-info-container {
+    width: 300px;
+  }
+  .customer-info-card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .new-address-form {
+    width: 90%;
+  }
+  .continue-btn {
+    width: 150px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .new-address-check-box-container p {
+    font-size: 0.9rem;
+  }
+  .new-address-form {
+    width: 90%;
+    min-width: 300px;
+  }
+}
