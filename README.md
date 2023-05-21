@@ -15,7 +15,7 @@ Our registered clients can order the meals they want or choosing a specific chef
 The guest user can have overview about our app also but with a limited permissions.
 
 ![App view](./client/public/images/app-view.png)
-_Project link is available at_ [Hommy food App](https://dapper-sunburst-d4d0e4.netlify.app/)
+_Project link is available at_ [Hommy food App](https://646a511b498134218dd83f28--dreamy-lolly-40c181.netlify.app/)
 
 ## 2. Usage
 
