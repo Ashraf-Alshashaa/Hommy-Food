@@ -10,28 +10,17 @@
 
 ## 1. Description
 
-This app helps the freelance chefs to post their meals and sale them online.
-Our registered clients can order the meals they want or choosing a specific chef to order from according to his rate or cuisine.
-The guest user can have overview about our app also but with a limited permissions.
+This application facilitates the endeavors of freelance chefs by providing them with a platform to showcase and vend their culinary creations online. Our esteemed clientele, upon successful registration, are afforded the opportunity to place orders for desired meals or select a particular chef based on their respective rates or culinary specialties. While guest users may peruse our application's features, their permissions are restricted in nature.
 
 ![App view](./client/public/images/app-view.png)
 _Project link is available at_ [Hommy food App](https://646a511b498134218dd83f28--dreamy-lolly-40c181.netlify.app/)
 
 ## 2. Usage
 
-- User (guest) can overview the app.
-- User can create an account and choose between a chef or client.
-- Ability to search for a meal according to the meal name, ingredients, category or cuisine.
-- Adding a specific chef to a favorite.
-- Finding the top 10 rated chefs.
-- Viewing the chef details, the service his offering (Delivery or Pickup), rating him and see his meal list.
-- Users (chef, customer) can edit thier personal profile.
-- The user can request several different meals from the same chef for one order.
-- In Delivery service, the user can change his default address at the checkout page to a different address.
-- In the Pickup service it will be showing the contact and the address of the chef.
-- Apple to pay online or cash.
-- User can check his order history.
-- Order to prepare page helps the chef to organize the orders he has.
+- The application provides a comprehensive overview of its features to guest users. Individuals have the option to register an account and select either the role of a chef or a client. Noteworthy functionalities include the ability to conduct searches for meals based on criteria such as meal name, ingredients, category, or cuisine. Moreover, users can add specific chefs to their list of favorites and access a list of the top 10 rated chefs.
+- Detailed information regarding chefs is available, including their service options (delivery or pickup), ratings, and meal lists. Both chefs and customers have the capability to edit their personal profiles. Customers are able to request multiple different meals from the same chef within a single order.
+- In the case of the delivery service, customers are permitted to modify their default address to an alternative one during the checkout process. For the pickup service, the contact information and address of the chef are displayed.
+- The application supports online payment as well as cash transactions. Users have the ability to review their order history, while the order preparation page assists chefs in effectively organizing their incoming orders.
 
 ## 3. Setup
 
